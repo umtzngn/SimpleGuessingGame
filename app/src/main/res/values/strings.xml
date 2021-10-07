@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Layouts XML</string>
+    <string name="say_tahmin_oyununa_hos_geldiniz">Sayı Tahmin Oyununa Hoş Geldiniz</string>
+    <string name="tahmini_giriniz">1 ile 20 arasında bir sayı tahmin ediniz ve aşağıya giriniz</string>
+    <string name="tahmininiz">Tahmininiz</string>
+    <string name="yaziklar_olsun_hilesi_80_sans">Yazıklar Olsun Hilesi (%80 Şans)</string>
+    <string name="duzenbaz_hilesi_70_sans">Düzenbaz Hilesi (%70 Şans)</string>
+    <string name="cakal_hilesi_50_sans">Çakal Hilesi (%50 Şans)</string>
+    <string name="hile_aclsin_mi">Hile Açılsın mı ?</string>
+    <string name="sonucu_goster">Sonucu Göster</string>
+    <string name="sonucu_goster_text">Sistem Sonucu: %s </string>
+</resources>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity"
+    tools:ignore="UseSwitchCompatOrMaterialXml">
+
+    <TextView
+        android:id="@+id/oyunAdiTextView"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="@string/say_tahmin_oyununa_hos_geldiniz"
+        android:textSize="24sp"
+        android:textColor="@color/teal_700"
+        />
+
+    <TextView
+        android:id="@+id/oyunHakkindaTexView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tahmini_giriniz"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/oyunAdiTextView"/>
+
+    <EditText
+        android:id="@+id/tahminDegeriText"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/tahmininiz"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/oyunHakkindaTexView"
+        android:minHeight="48dp"
+        android:autofillHints="" />
+
+    <RadioGroup
+        android:id="@+id/hileSecenekleriRadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tahminDegeriText">
+
+        <RadioButton
+            android:id="@+id/yaziklarOlsunRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/yaziklar_olsun_hilesi_80_sans"/>
+
+        <RadioButton
+            android:id="@+id/duzenbazRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/duzenbaz_hilesi_70_sans"/>
+
+
+        <RadioButton
+            android:id="@+id/cakalRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cakal_hilesi_50_sans"/>
+
+
+    </RadioGroup>
+
+    <Switch
+        android:id="@+id/hileAcilsinmiSwitch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/hile_aclsin_mi"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hileSecenekleriRadioGroup"
+        />
+
+    <Button
+        android:id="@+id/sonucGosterButtom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hileAcilsinmiSwitch"
+        android:text="@string/sonucu_goster"/>
+
+
+    <TextView
+        android:id="@+id/sonucGosterTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sonucGosterButtom" />
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
